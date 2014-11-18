@@ -44,6 +44,8 @@ function getSearchedItems(searchval, user)
         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
     }
     
+    var sust=$('#sust_filter').attr('active')=='true'?'1':'0';
+
     var array_of_checked_values = $("[name=multiselect_country_filter]:checked").map(
         function(){return $(this).attr("title");} ).get();
 //    var array_of_checked_values = $("#country_filter").multiselect().map(function(){
@@ -61,7 +63,7 @@ function getSearchedItems(searchval, user)
             
     //$("#explore_content").html("utils/data_retriever.php?id="+callid+"&user="+user+"&query="+searchval+"&phase="+current_phase+"&typ="+current_typ+"&country="+array_of_checked_values);
     //return;
-    xmlhttp.open("GET","utils/data_retriever.php?id="+callid+"&user="+user+"&query="+searchval+"&phase="+current_phase+"&typ="+current_typ+"&country="+array_of_checked_values,true);
+    xmlhttp.open("GET","utils/data_retriever.php?id="+callid+"&user="+user+"&query="+searchval+"&phase="+current_phase+"&typ="+current_typ+"&country="+array_of_checked_values+"&sustainable="+sust,true);
     xmlhttp.onreadystatechange=function()
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
@@ -269,9 +271,12 @@ function getUserItems(searchval, user)
     // something like $(this).hide() (only something useful, probably) :P
     });
 
+    var sust=$('#sust_filter').attr('active')=='true'?'1':'0';
+
+
     //$("#explore_content").html("utils/data_retriever.php?id="+callid+"&user="+user+"&query="+searchval+"&phase="+current_phase+"&typ="+current_typ+"&country="+array_of_checked_values);
     //return;
-    xmlhttp.open("GET","utils/data_retriever.php?id="+callid+"&user="+user+"&query="+searchval+"&phase="+current_phase+"&typ="+current_typ+"&country="+array_of_checked_values,true);
+    xmlhttp.open("GET","utils/data_retriever.php?id="+callid+"&user="+user+"&query="+searchval+"&phase="+current_phase+"&typ="+current_typ+"&country="+array_of_checked_values+"&sustainable="+sust,true);
     xmlhttp.onreadystatechange=function()
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)

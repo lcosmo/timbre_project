@@ -76,6 +76,8 @@
 //                 IF(country='%s',1.5,1)
 //                 *health as wrating  from project where %s phase LIKE '%s' and typology LIKE '%s' AND (%s FALSE) order by phase, typology",$lang,$lang,$_SESSION['searchaims']['prefered_country'],$search,$phase,$typ,$countries);
 
+        $sustainable = ($_GET['sustainable']=='1')?' AND sustainable=1 ':'';
+
         $words=array(''); 
         $query = '';
         if(isset($_GET['query']) && $_GET['query']!="")
@@ -93,9 +95,11 @@ UNION ALL
                  ELSE 0.9 END             
                  )*
                  IF(country='%s',1.5,1)
-                 *health as twrating  from project where %s phase LIKE '%s' and typology LIKE '%s' AND (%s FALSE)",$lang,$lang,$_SESSION['searchaims']['prefered_country'],$search,$phase,$typ,$countries);
+                 *health as twrating  FROM project WHERE %s phase LIKE '%s' and typology LIKE '%s' %s AND (%s FALSE)",$lang,$lang,$_SESSION['searchaims']['prefered_country'],$search,$phase,$typ,$sustainable,$countries);
         }
         $query = sprintf('select *,  twrating*(1+(count(*)-1)*1) as wrating from (%s) data group by data.id', $query);
+
+
 
         if($phase=='%' && !(isset($_GET['user']) && $_GET['user']!=''))
             $query = sprintf("select *, s.sequential_order as ord FROM (%s) c, searchpreferences s WHERE s.usersessions_id=%d AND c.phase = s.category_name", $query, $_SESSION['sessionid']);            

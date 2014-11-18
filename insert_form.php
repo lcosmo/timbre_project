@@ -72,8 +72,10 @@
                         echo "<option>" . $l . "</option>";
                     ?>
                 </select>
-            </td></td>
-            
+            </td>
+            </tr><tr>
+        <td>Sustainable brownfield regeneration and remediation</td><td><input id='sustainable' name='sustainable' type='checkbox' /><small><img src='img/sust.png' width='16px' ></img> (Check if the resource is about this topic)</small></td>
+        </tr><tr>
         </tr><tr class="additionalinfo"><td><br/><h3>Additional Information</h3><input type="hidden" id="moreinfo" name="moreinfo" value="yes" /></td>
         </tr><tr class="additionalinfo">
             <td>Technology name:</td>

@@ -129,7 +129,7 @@ if (isset($_POST['insertitem'])) {
         <script src="./js/jquery.multiselect.js" type="text/javascript"></script>
 
         <script src="./js/jquery.raty/js/jquery.raty.min.js" type="text/javascript"></script>
-
+        <script src="js/jquery.qtip/jquery.qtip-1.0.0-rc3.js"   type="text/javascript"></script>
 
         <script type="text/javascript">
 
@@ -330,6 +330,20 @@ if (isset($_POST['insertitem'])) {
                     current_typ = current_typ == "Typology" ? "Regulation" : current_typ;
                     update_selectors();
                 });
+                
+                mk_popup("sust_filter","Sustainable brownfield regeneration and remediation");
+                $('#sust_filter').click(function()
+                {
+                    var active = $(this).attr('active')=='true';
+                    $(this).attr('active',!active);
+                    
+                    if(!active)
+                        $(this).find('img').attr('src','img/suston.png');
+                    else
+                        $(this).find('img').attr('src','img/sustoff.png');
+                    
+                    getSearchedItems($("#query").val());
+                });
             }
         </script>
     </head>
@@ -413,15 +427,17 @@ for ($i = 0; $i < sizeof($phases); $i++) {
                     </ul>
 
                     <span id="countryselect">    
+                        <span id="sust_filter" active='false'><img src='img/sustoff.png' width='25px'></img></span>
                         <span>
                             <select name="country_filter" multiple="multiple"  id="country_filter">
-<?
-foreach ($countriesofreference as $p)
-    echo "<option id='cof_opt_$p'>$p</option>";
-?>
+                            <?
+                            foreach ($countriesofreference as $p)
+                                echo "<option id='cof_opt_$p'>$p</option>";
+                            ?>
                             </select>
                         </span>
                         <span class="label"> Country of reference:</span>
+                        
                     </span>
                     <span id="insertbutton">     
 

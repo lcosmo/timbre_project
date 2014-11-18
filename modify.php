@@ -14,11 +14,6 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 $username = $row['username'];
 $userid=$row['id'];
 $isadmin = $row['admin']==1;
-
-    $myFile = "post_log.txt";
-    $fh = fopen($myFile, 'a');
-    fwrite($fh, serialize($_POST) . "\n");
-    fclose($fh);
     
 if (isset($_GET['insertitem'])) {
     $array = array(
@@ -41,7 +36,8 @@ if (isset($_GET['insertitem'])) {
         'rating1' => $_POST['rating1'],
         'rating2' => $_POST['rating2'],
         'rating3' => $_POST['rating3'],
-        'rating' => ($_POST['rating1'] + $_POST['rating2'] + $_POST['rating3'])/3
+        'rating' => ($_POST['rating1'] + $_POST['rating2'] + $_POST['rating3'])/3,
+        'sustainable' => isset($_POST['sustainable'])?1:0
     );
     
     $more_info = "";
@@ -73,13 +69,17 @@ if (isset($_GET['modifyitem'])) {
         'date' => date("Y/m/d H:i:s"),
         'rating1' => $_POST['rating1'],
         'rating2' => $_POST['rating2'],
-        'rating3' => $_POST['rating3']
+        'rating3' => $_POST['rating3'],
+        'sustainable' => isset($_POST['sustainable'])?1:0
     );
 
     insertOrUpdate($mysqli, "project",
            array_keys($array), array_values($array) ,
-           array(2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18));
+           array(2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19));
     
+    
+
+
     //UPDATE RATING
     $result = $mysqli->query(
 <<<EOF
@@ -150,4 +150,9 @@ foreach($row as $col => $val)
 
 $OUTXML = $doc->saveXML($doc->documentElement, LIBXML_NOEMPTYTAG);
 echo $OUTXML;
+
+//$myFile = "post_log.html";
+//$fh = fopen($myFile, 'w');
+//fwrite($fh, $OUTXML);
+//fclose($fh);
 ?>

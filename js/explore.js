@@ -207,6 +207,7 @@ function setSearchMode(val)
 
 function modify_item(id)
 {
+    resid=id;
        $.ajax({
         type: "GET",
         url: "modify.php?id="+id,
@@ -219,17 +220,24 @@ function modify_item(id)
             $('#insert').attr("name",'modifyitem');
             $('#insert').click(function ()
                 {
-                    $.post("modify.php?modifyitem=true&id="+id, $('#insertform').serialize(), 
-                    function (asd){
-                        alert("asd");
-//                      var myWindow = window.open("void.html","MsgWindow","width=200,height=100");
-//                      $(myWindow.document.body).html(asd);
-                        //$("#debug_w").html("asd");                        
-                        show_insert(false);
-                        update_selectors();
-                    });
-                }   
-                );            
+                    $.ajax({
+                            type: "POST",
+                            dataType: 'text',
+                            url: "modify.php?modifyitem=true&id="+resid,
+                            data: $('#insertform').serialize(),
+                            success: function (){
+//                                        alert('ok');
+                //                      var myWindow = window.open("void.html","MsgWindow","width=200,height=100");
+                //                      $(myWindow.document.body).html(asd);
+                                        //$("#debug_w").html("asd");                        
+                                        show_insert(false);
+                                        update_selectors();
+                                    },
+                            error:  function(err){
+//                                        alert(err);
+                                    }
+                           });
+                });            
             $(xml).find('field').each(function(){
                 var name = $(this).attr('name');
                 //WARNING: fix
@@ -241,8 +249,12 @@ function modify_item(id)
                 var el = $("[name='"+name+"']");
                 
                 if(el.is("[type=checkbox]"))
-                {
-                    el.attr('checked', true);					
+                {          
+                    
+                    if($(this).text()!=0)
+                        el.attr('checked', true);
+                    else
+                        el.removeAttr("checked");
                 }
                 else if(el.is("[type=radio]"))
                 {
@@ -286,4 +298,24 @@ function blibkOut()
         });
     });
     setTimeout(blinkIn,700);
+}
+
+function mk_popup(id,message)
+{
+
+    $('#'+id).qtip({
+        content: message,
+        show: 'mouseover',
+        hide: 'mouseout',
+        position: {
+            corner: {
+                tooltip: 'rightTop',
+                target: 'leftBottom'
+            }
+        },
+        style: { 
+            name: 'light', // Inherit from preset style
+            width: 400
+        }                    
+    });
 }
