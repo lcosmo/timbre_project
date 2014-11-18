@@ -1,0 +1,101 @@
+body
+{
+    font-family: Arial;
+}
+
+#header
+{
+    height: 115px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#header img
+{
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;        
+    height: 88px;
+    float:left;
+}
+
+#navigation_div
+{	
+    padding: 2px;	
+    background-color: rgb(192, 172, 171);		
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 2px;
+    height: 20px;
+    font-size: 80%;
+}
+
+
+#navigation_div #position
+{
+    display: inline-block;
+    float: left;
+}
+#navigation_div #position a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#navigation_div #position a:hover
+{
+    color: rgb(130, 90, 87);
+}
+
+#navigation_div #profile
+{
+    display: inline-block;
+    float: right;
+}
+
+#navigation_div #profile a
+{
+    color: black;
+    text-decoration: none;
+}
+
+#navigation_div #profile a:hover
+{
+    color: rgb(130, 90, 87);
+}
+
+#footer 
+{
+   float: bottom;
+}
+#disclaimer
+{
+    margin-top: 5%;
+    width: 100%;
+    font-size: 80%;
+   
+}
+
+#disclaimer_overlay_right
+{
+    position: absolute;
+    top: 36px;
+    left:  35%;
+    background-color: red;
+    
+    width: 30%;
+    z-index: 0;    
+    background-color: rgb(230, 222, 221);
+}
+
+#disclaimer_overlay_right table
+{
+    font-size: 8pt;
+    width: 100%;
+}
+
+#disclaimer_overlay_right img
+{
+    display:inline;
+    height: 28px;
+}

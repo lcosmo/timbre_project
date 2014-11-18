@@ -1,0 +1,130 @@
+
+#login_div
+{
+	position:relative;
+	left:50%;
+	        
+	border-color: rgb(130, 90, 87);
+        border-style: solid;
+        border-width: 0px 2px 2px 2px;
+    
+	width: 500px;
+	margin-left: -250px;
+	
+	margin-top: 3%;
+	
+}
+
+#login_div .text_input
+{
+    background-color: rgb(231,238,196);
+    width:100%;
+}
+
+#login_div table
+{
+    width: 494px;    
+}
+
+#login_div .button
+{
+    width: 80px;
+}
+
+#login_title
+{	
+	border-bottom-style: solid;
+	border-width: 2px;
+	
+        font-size: 20px;
+	font-weight: bold;
+	
+        border-color: rgb(130, 90, 87);
+	border-style: solid;
+	border-width: 2px;
+        
+	background-color: rgb(192, 172, 171);
+	padding:2px;
+	color: rgb(110, 70, 67);
+}
+#login_form
+{
+     padding: 10px 5px 0 5px;
+/*     padding: 0px;*/
+     border-color: rgb(130, 90, 87);
+	
+     border-style: solid;
+     border-width: 2px;
+     border-top: 0px;
+    
+    
+}
+* html #login_form { padding: 10px 0px 0 0px; }  /* for IE 6 */
+* + html #login_form { padding: 10px 0px 0 0px; }  /* for IE 7 */
+
+#register_form{
+     padding: 6px 10px 10px 5px;
+     
+     border-color: rgb(130, 90, 87);
+	
+     border-style: solid;
+     border-width: 2px;
+     border-top: 0px;  
+     
+      height: 18px;
+}
+* html #register_form { padding: 0px; }  /* for IE 6 */
+* + html #register_form { padding: 0px; }  /* for IE 7 */
+
+#register_form span{
+    margin-top: 3px;
+   
+}
+    
+#login
+{
+    position:absolute;
+    right: 7px;
+}
+
+#forgot
+{
+    float: left;
+}
+
+#new_user
+{
+    position:absolute;
+    right: 87px;
+    bottom: 6px;
+   
+}
+#register
+{
+    position:relative;
+    width: 80px;
+    margin:  4px;
+    left: 401px;
+    bottom:6px;
+}
+* html #register { bottom:0px; }  /* for IE 6 */
+* + html #register { bottom:0px; }  /* for IE 7 */
+
+#timbre_description
+{
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    padding: 2px 10px 2px 10px;
+}
+
+#position
+{
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 130%;
+}
+.error
+{
+	color: red;
+}

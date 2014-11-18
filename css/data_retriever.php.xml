@@ -1,0 +1,4 @@
+<?xml-stylesheet href="data_retriever.php_files/intl.css" type="text/css"?><parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">Errore interpretazione XML: contenuto illegale dopo l'elemento
+Indirizzo: http://127.0.0.1/TIMBRE/utils/data_retriever.php?phase=All&amp;typ=All&amp;id=1%country=All
+Linea numero 2, colonna 1:<sourcetext>&lt;b&gt;Notice&lt;/b&gt;:  Undefined index: country in &lt;b&gt;C:\Program Files (x86)\EasyPHP-5.3.9\www\TIMBRE\utils\data_retriever.php&lt;/b&gt; on line &lt;b&gt;58&lt;/b&gt;&lt;br /&gt;
+^</sourcetext></parsererror>

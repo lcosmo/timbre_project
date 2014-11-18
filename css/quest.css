@@ -1,0 +1,175 @@
+form
+{
+padding:0;
+margin:0;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+input, textarea
+{
+border-radius: 0px;
+}
+
+textarea
+{
+width:90%;
+}
+
+.quest
+{
+	display:block;
+	background-color: rgb(195, 217, 90);
+	margin-top: 37px;
+	padding: 11px;
+	padding-bottom:20px;
+	width: 98%;
+	min-height:400px;
+}
+* html .quest { margin-top: 0px; height : 400px; }  /* for IE 6 */
+* + html .quest { margin-top: 0px; height : 400px; }  /* for IE 7 */
+
+.quest table
+{
+    margin-right: 15px;
+    width: 100%;
+}
+
+.quest table tr td
+{
+	padding:10px;	
+}
+
+#fq {    width: 600px;}
+
+#fram_image
+{
+    padding-left: 45%;
+    margin-left: -300px;
+}
+
+#framework_comments
+{
+    padding-bottom: 10px;
+}
+
+.quest #categories_div
+{
+    width: 90%;
+}
+
+.quest #update_cat
+{
+    float: right;
+}
+
+.quest #categories
+{
+    padding-bottom: 5px;
+}
+
+.odd
+{
+    background-color: rgb(214,226,154);
+}
+.eaven
+{
+    background-color: rgb(234,241,207);
+}
+
+.subquestion
+{
+	padding:5px;
+}
+
+.label
+{
+vertical-align: top;
+text-align: left;
+font-weight: bold;
+}
+
+.radio_options
+{
+	list-style: none;
+}
+
+.error
+{
+    color:red;
+}
+
+
+/********************PROGRESS*********************/
+#quest_phase
+{
+	margin-top:5px;
+	background-color: rgb(230, 222, 221);
+	width:100%;
+}
+#quest_phase ul {
+	margin: 0;
+	padding: 0;
+}
+
+#quest_phase li {
+	display:inline;
+	list-style:none;
+}
+
+#quest_phase a {
+	/*background: url('../img/tableftc.gif') no-repeat left top;*/
+	background-color: rgb(230, 222, 221);
+	color: black;
+	float: left;
+	/*margin-right: 3px;
+	padding-left: 4px;*/
+	text-decoration: none;
+}
+
+#quest_phase a span
+{
+float: left;
+display: block;
+background-color: rgb(192, 172, 171);
+/*background-image: url("../img/tabrightc.gif");*/
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: right top;
+background-clip: border-box;
+background-origin: padding-box;
+background-size: auto auto;
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-left: 6px;
+margin-right: 1px;
+margin-left: 1px;
+
+	font-weight: bold;
+height:22px;
+}
+
+#quest_phase a:hover span
+{
+	cursor: pointer;
+	background-color: rgb(214, 225, 153);
+	color: rgb(110, 70, 67);
+}
+
+#quest_phase li  a.selected span 
+{
+	background-color: rgb(195, 217, 90);
+	color: rgb(110, 70, 67);
+	/*background-color: rgba(185, 207, 80, 1);*/
+
+}
+
+#quest_phase li  a.disabled span 
+{
+  color: rgb(88,88,88); 
+  cursor: default;
+}

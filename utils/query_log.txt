@@ -1,0 +1,42 @@
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (27,'1','Strategic planning',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (27,'2','Investigation (preliminary/detailed)',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (27,'5','Remediation technologies evaluation and selection',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (27,'6','Building and infrastructure documents',6) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (28,'10','Implementation, control, monitoring (land back to market)',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (28,'1','Strategic planning',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (37,'1','Strategic planning',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (37,'2','Investigation (preliminary/detailed)',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (34,'1','Strategic planning',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (34,'2','Investigation (preliminary/detailed)',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (34,'3','Risk assessment (qualitative/quantitative)',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (34,'6','Building and infrastructure documents',6) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (37,'5','Remediation technologies evaluation and selection',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (37,'6','Building and infrastructure documents',6) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (37,'7','Deconstruction/re-use of structures materials',7) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (34,'7','Deconstruction/re-use of structures materials',7) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (42,'8','Waste management',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (40,'1','Strategic planning',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (40,'2','Investigation (preliminary/detailed)',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (44,'8','Waste management',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (40,'8','Waste management',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (51,'12','Funding and financing',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (54,'1','Strategic planning',1) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (54,'2','Investigation (preliminary/detailed)',2) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (54,'3','Risk assessment (qualitative/quantitative)',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (54,'5','Remediation technologies evaluation and selection',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (54,'6','Building and infrastructure documents',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (56,'1','Strategic planning',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (56,'2','Investigation (preliminary/detailed)',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (56,'3','Risk assessment (qualitative/quantitative)',5) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (56,'4','Remediation strategies and options',6) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (56,'5','Remediation technologies evaluation and selection',7) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (61,'1','Strategic planning',1) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (61,'2','Investigation (preliminary/detailed)',2) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (61,'3','Risk assessment (qualitative/quantitative)',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (65,'1','Strategic planning',1) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (69,'3','Risk assessment (qualitative/quantitative)',1) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (113,'1','Strategic planning',1) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (113,'5','Remediation technologies evaluation and selection',2) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (113,'2','Investigation (preliminary/detailed)',3) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (113,'3','Risk assessment (qualitative/quantitative)',4) -> 
+0)	 INSERT INTO searchpreferences (usersessions_id,category_id,category_name,sequential_order) VALUES (113,'4','Remediation strategies and options',5) -> 

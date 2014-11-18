@@ -1,0 +1,621 @@
+/******************FRAMEWORK*********************/
+#framework
+{
+	text-align:center;	
+	width:100%;
+}
+	
+#framework img
+{
+	width: 50%;	
+}
+#framework img
+{
+border: none;
+}
+area  
+{
+	border-color: rgb(130, 90, 87);
+	border-style: solid;
+	border-width: 2px;
+}
+/************************************************/
+
+/*#searchbar
+{
+    margin-top:5px;
+    padding:5px;
+    background-color: rgb(192, 172, 171);
+
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 2px;
+    height: 1.5em;
+
+}*/
+
+#searchbar .green
+{
+    background-color: rgb(231,238,196);
+}
+
+.search_block
+{
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    
+    height: 35px;	
+    width: 320px;
+
+    padding-top: 2px;
+    display: inline-block;	
+}
+
+.search_span #query
+{
+    width: 225px;
+    height: 30px;
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 2px; 
+}
+
+.search_span #submit_query
+{
+    width: 75px;
+    height: 30px;
+    
+    font-size: 17px;
+    font-weight: bold;
+        
+    background-color: rgb(231,238,196);
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 2px;  
+}
+
+
+.search_span form
+{
+    margin: 0px;
+    padding: 0px;
+}
+.search_span span
+{	
+    vertical-align: middle;
+    display: inline-block;	
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px; 
+/*  
+    margin-top: -10px;
+    padding-top: 13px;
+*/
+}
+
+#header_bkg
+{
+    position:absolute;
+    right: 9px;
+    height: 140px;
+    background-repeat:no-repeat;
+    z-index: -1;    
+}
+
+#insert_block
+{
+    position:absolute;
+    top: 120px;
+    right: 10px;
+}
+
+#insert_block input
+{
+    font-weight: bold;
+    height: 30px;
+    
+    background-color: rgb(231,238,196);
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+#helplink
+{    
+    position:absolute;
+    top: 41px;
+    right: 10px;
+    
+    width: 75px;
+    height: 20px;
+    
+    font-weight: bold;
+        
+    background-color: rgb(231,238,196);
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 2px;  
+    
+    padding-top: 1px;
+}
+
+#helplink a
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+#timbrelink
+{
+    position:absolute;
+    font-size: 80%;
+    font-weight: bold;
+    top: 131px;
+    left: 22px;
+}
+
+#timbrelink a
+{
+   text-decoration: none;
+   color: black;
+}
+
+#search_results_div
+{
+	height: 1em;
+}
+
+#tabselector
+{
+	display: inline-block;
+	float: right;
+	margin-right:10px;
+}
+
+#explore_div
+{
+    margin-top: 4px;
+    padding-left: 16em;    
+}
+
+#explore_content
+{
+	display: block;		
+	margin-top: 5px;
+	width:100%;
+	        
+	background-image: url("../img/bkg.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center top;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+}
+* html #explore_content { margin-top:5px; }  /* for IE 6 */
+* + html #explore_content { margin-top:5px; }  /* for IE 7 */
+
+
+#explore_content #itemlist
+{	
+	width:100%;	
+	float: left;
+}
+
+#explore_content #itemlist .even
+{	
+    background-color: rgb(217, 205, 204);
+    background-color: rgba(130, 90, 87, 0.3);
+}
+
+#explore_content #itemlist .odd
+{	
+    background-color: rgb(228, 237, 178);
+    background-color: rgba(164, 195, 0, 0.3);
+}
+
+.colhead
+{
+	background-color: rgb(180, 156, 154);
+    background-color: rgba(130, 90, 87, 0.6);
+	font-weight: bold;
+	font-size: 90%;
+}
+.phasename
+{
+	background-color: rgb(195, 214, 87);
+	background-color: rgba(164, 195, 0, 0.65);
+	font-weight: bold;
+}
+
+#insert_div, #hidden_insert_div, #search_results_div
+{
+	margin:0px;
+	padding:0px;
+	background-color: rgb(192, 172, 171);
+		
+	border-color: rgb(130, 90, 87);
+	border-style: solid;
+	border-width: 2px;
+}
+
+#hidden_insert_div 
+{
+	padding-right: 10px;
+	text-align: right;
+}
+
+.selectinsertinput
+{
+    width: 200px;
+}
+.textinsertinput
+{
+    width: 520px;
+}
+
+#remediationtechnologytime, #costs
+{
+    width: 436px;
+}
+#remediationtechnologytime_unit, #costs_unit
+{
+    width: 80px;
+}
+
+
+
+#submint_buttons
+{
+    text-align:right;
+}
+#insert_div span
+{
+    margin-right: 0px;
+}
+#insert_div .error
+{
+    color:red;
+}
+#insert_div form
+{
+    margin: 0%;
+    width: 96%;
+    _width: 100%;
+    padding: 5px 2% 5px 2% ;
+}
+
+#moreinfo_container, #rating_container
+{
+    background-color: rgb(192, 172, 171);        
+    border-color: rgb(130, 90, 87);
+    border-style: solid;
+    border-width: 4px;
+    
+    position: fixed;
+    top:10%;
+    left:50%;
+    margin-left:-400px;
+    width:800px;
+    height: 600px;
+    
+    text-align: right;
+}
+
+#rating_container
+{
+    top:8%;
+    margin-left:-400px;
+    width:800px;
+    height: 530px;
+}
+
+
+#moreinfo_div, #rating_div
+{
+    padding:4px;
+    background-color: white;
+    background-image: url("../img/bkg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+
+    position: absolute;
+    overflow: auto;
+    width:792px;
+    height:570px;
+    bottom:0px;
+    left:0px;
+}
+
+#rating_div
+{
+    text-align: left;
+    width:792px;
+    height:500px;
+}
+
+#rating_div small
+{
+    font-size: 85%;
+}
+
+#moreinfo_div table
+{
+    width:100%;
+}
+#moreinfo_div table tr td
+{
+    white-space: normal;
+    background-color: rgb(228, 237, 178);
+/*background-color: rgba(164, 195, 0, 0.3);*/
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+/********************* SIDE MENU ***********************/
+
+#side_menu
+{
+    
+	display: inline-block;   
+	width: 250px;
+	margin-left: -255px;  
+	
+	/*border-color: black;
+	border-style: solid;
+	border-width: 2px;*/
+}
+* html #side_menu { display:inline; }  /* for IE 6 */
+* + html #side_menu { display:inline; }  /* for IE 7 */
+
+
+
+
+#side_menu ul {
+	display: block;
+	background-color: rgb(230, 222, 221);	
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#side_menu li {
+	display: block;
+	list-style:none;	
+	margin: 2px;
+	}
+* html #side_menu li { height:0.5em; }  /* for IE 6 */
+* + htmlhtml #side_menu li { height:0.5em; }  /* for IE 7 */
+
+#side_menu a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#side_menu a span
+{
+    display: block;
+    background-color: rgb(192, 172, 171);
+    /*background-image: url("../img/tabrightc.gif");*/
+    /*background-color: #ddd;*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    /*color: #608aaa;*/
+}
+
+#side_menu a span.prefered
+{
+    background-color: rgb(162, 142, 141);
+}
+
+#side_menu a span
+{
+	cursor: pointer;
+}
+
+#side_menu a:hover span
+{
+	cursor: pointer;
+	background-color: rgb(214, 225, 153);
+	color: rgb(110, 70, 67);
+	/*font-weight: bold;*/
+}
+#side_menu  li  a.selected span 
+{	
+	background-color: rgb(195, 217, 90);
+	color: rgb(110, 70, 67);
+	/*background-color: rgba(185, 207, 80, 1);*/
+	font-weight: bold;
+}
+
+
+/********************* TABS ***********************/
+
+#tab_menu
+{
+	display: inline-block;	
+	vertical-align: top;
+	width: 100%;	
+}
+* html #tab_menu { display:inline; height : 450px; }  /* for IE 6 */
+* + html #tab_menu { display:inline; height : 450px; }  /* for IE 7 */
+
+#tabs
+{
+	background-color: rgb(230, 222, 221);
+        width: 100%;
+        height: 32px;
+        
+}
+
+
+
+#tabs ul {
+	margin: 0;
+      	padding: 0;
+}
+
+#tabs li {
+	display:inline;
+	list-style:none;
+}
+
+#tabs a {
+	/*background: url('../img/tableftc.gif') no-repeat left top;*/
+/*	background-color: rgb(230, 222, 221);*/
+        
+	color: black;
+	float: left;
+	/*margin-right: 3px;
+	padding-left: 4px;*/
+	text-decoration: none;
+}
+
+#tabs a span
+{
+    float: left;
+    display: block;
+    /*background-color: rgb(192, 172, 171);*/
+    /*background-image: url("../img/tabrightc.gif");*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    padding: 5px 10px 5px 6px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-top: 2px;
+}
+
+#tabs a .button
+{
+    background-color: rgb(192, 172, 171);
+}
+
+#tabs a:hover span
+{
+	cursor: pointer;
+	background-color: rgb(214, 225, 153);
+	color: rgb(110, 70, 67);
+}
+
+#tabs li  a.selected span 
+{
+	background-position: 100% -42px;
+	background-color: rgb(195, 217, 90);
+	color: rgb(110, 70, 67);
+	/*background-color: rgba(185, 207, 80, 1);*/
+	font-weight: bold;
+}
+
+
+#insertbutton span
+{
+    float: left;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    
+    margin-left: 8%;
+}
+
+
+#framework_link a span
+{
+        padding: 8px 10px 5px 6px;
+        background-color: rgb(230, 222, 221);                
+	color: rgb(110, 70, 67);
+	text-align:center;
+	font-weight:bold;
+	font-size:100%;
+        margin-bottom: 5px;
+}
+#framework_link a.hover span.hover
+{
+	cursor: pointer;
+	color: rgb(214, 225, 153) !important;
+}
+
+#framework_link a.selected span
+{
+	color: rgb(164, 196, 9);
+}
+
+
+
+
+#fq {    width: 600px; }
+
+#fram_image
+{
+    padding-left: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -300px;
+}
+
+#framework_comments
+{
+    padding-bottom: 10px;
+}
+
+
+#update_cat
+{
+    margin-left: 700px;
+}
+
+#categories
+{
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+
+}
+
+#categories tr th, #categories tr td
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: #ddd;
+    padding: 0px 4px 0 4px;
+}
+#categories tr th
+{
+    font-size: 80%;
+/*                line-height: 100%;*/
+            }
+            #categories tr td
+            {
+                background-color: #eee;
+            }
+            
+            .centered
+            {
+                text-align: center;
+               
+            }
